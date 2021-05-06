@@ -1,0 +1,10 @@
+<h1>TOP FLATS PAGE</h1>
+<%= link_to "RETOUR HOME PAGE", root_path %>
+<ul>
+  <% @flats.each do |flat| %>
+  <li>
+    <%= link_to "#{flat.title}", flat %>
+  </li>
+  <% end %>
+</ul>
+
